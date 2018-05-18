@@ -35,3 +35,24 @@ Block math:
 $$
 \int_{-\infty}^\infty g(x) dx
 $$
+
+```puml
+@startuml
+testdot
+@enduml
+```
+
+```puml
+@startuml
+
+    Class Stage1
+    Class Timeout {
+        +constructor:function(cfg)
+        +timeout:function(ctx)
+        +overdue:function(ctx)
+        +stage: Stage1
+    }
+     Stage1 <|-- Timeout
+
+@enduml
+```
